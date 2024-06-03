@@ -1,6 +1,6 @@
 import styles from './Board.module.css';
 
-function Board() {
+function Board(props) {
 	return (
 		<div className={styles['board-container']}>
 			<div className={styles['img-container']}>
@@ -13,9 +13,15 @@ function Board() {
 				催眠
 			</div>
 			<div className={styles.attributes}>
-				最終傷害 +20%<br />
-				最終傷害 +20%<br />
-				最終傷害 +20%<br />
+				<div className={styles.attribute}>
+					{props.attributes[0]}
+				</div>
+				<div className={styles.attribute}>
+					{props.attributes[1]}
+				</div>
+				<div className={styles.attribute}>
+					{props.attributes[2]}
+				</div>
 			</div>
 		</div>
 	);
