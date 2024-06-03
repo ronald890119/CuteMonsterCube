@@ -1,0 +1,57 @@
+.board-container {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #483b32;
+    width: 50rem;
+    height: 75rem;
+}
+
+.img-container {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 5rem; */
+    background-color: #6e6f73;
+    width: 45rem;
+    height: 45rem;
+}
+
+img {
+    width: 45rem;
+    height: 45rem;
+    margin-left: 3rem;
+}
+
+.name {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: #6e6f73;
+    font-size: 3rem;
+    width: 45rem;
+    color: white;
+}
+
+.skill {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-size: 3rem;
+    width: 45rem;
+    color: white;
+}
+
+.attributes {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: #6e6f73;
+    font-size: 3rem;
+    width: 45rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
