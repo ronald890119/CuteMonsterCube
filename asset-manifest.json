@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/CuteMonsterCube/static/css/main.5d5714a3.css",
-    "main.js": "/CuteMonsterCube/static/js/main.a5f4935a.js",
+    "main.css": "/CuteMonsterCube/static/css/main.6a7e340c.css",
+    "main.js": "/CuteMonsterCube/static/js/main.756a3d1f.js",
     "static/js/453.d855a71b.chunk.js": "/CuteMonsterCube/static/js/453.d855a71b.chunk.js",
     "static/media/background.jpeg": "/CuteMonsterCube/static/media/background.554095ddafd45a7de189.jpeg",
     "static/media/point.cur": "/CuteMonsterCube/static/media/point.9c97d4e0a7ba56793457.cur",
     "static/media/point_click.cur": "/CuteMonsterCube/static/media/point_click.3f3ab74be546b4db5ced.cur",
     "static/media/point_mouse.cur": "/CuteMonsterCube/static/media/point_mouse.4a5e648ebcec5e4c763e.cur",
     "index.html": "/CuteMonsterCube/index.html",
-    "main.5d5714a3.css.map": "/CuteMonsterCube/static/css/main.5d5714a3.css.map",
-    "main.a5f4935a.js.map": "/CuteMonsterCube/static/js/main.a5f4935a.js.map",
+    "main.6a7e340c.css.map": "/CuteMonsterCube/static/css/main.6a7e340c.css.map",
+    "main.756a3d1f.js.map": "/CuteMonsterCube/static/js/main.756a3d1f.js.map",
     "453.d855a71b.chunk.js.map": "/CuteMonsterCube/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d5714a3.css",
-    "static/js/main.a5f4935a.js"
+    "static/css/main.6a7e340c.css",
+    "static/js/main.756a3d1f.js"
   ]
 }
