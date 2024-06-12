@@ -1,4 +1,4 @@
-@media (max-width: 2560px) {
+@media (max-width: 2160px) {
   html {
     font-size: 10px;
   }
@@ -6,11 +6,11 @@
 
 @media (max-width: 1440px) {
   html {
-    font-size: 6.5px;
+    font-size: 6.6px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   html {
     font-size: 5px;
   }
@@ -48,22 +48,57 @@ body::before {
   z-index: -1;
 }
 
-.eventImg {
+nav {
+  background-color: #4A4A4A;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+nav *, nav *:hover {
+  cursor: url("../public/cursors/point_mouse.cur"), auto;
+}
+
+.leftPart {
   grid-area: 1 / 1 / 2 / 2;
-  /* margin-left: auto; */
   margin-right: 2rem;
 }
 
 #image {
   width: 45rem;
   height: 45rem;
-  margin-top: 15rem;
+  margin-top: 20rem;
+}
+
+.message {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 50%);
+  color: white;
+  border: solid white 2px;
+  font-size: 3rem;
+}
+
+.message:hover, label:hover {
+  cursor: url("../public/cursors/point.cur"), auto;
+}
+
+.player {
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
+
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-timeline, audio::-webkit-media-controls-volume-slider, audio::-webkit-media-controls-mute-button, audio::-webkit-media-controls-toggle {
+  cursor: url("../public/cursors/point_mouse.cur"), auto;
 }
 
 .shop-container {
-  /* background-color: aliceblue; */
   grid-area: 1 / 3 / 2 / 4;
-  margin-top: 15rem;
+  margin-top: 20rem;
 }
 
 .cube {
