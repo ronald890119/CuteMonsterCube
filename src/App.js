@@ -2,15 +2,19 @@ import styles from './App.module.css';
 import Board from './components/Board';
 import Button from '@mui/material/Button';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
 import { useState } from 'react';
 
 function App() {
   const [cost, setCost] = useState(0);
 	const [cubeUsed, setCubeUsed] = useState(0);
 	const [numCube, setNumCube] = useState(0);
-	const [attributes, setAttributes] = useState([]);
+	const [attributes, setAttributes] = useState(['?', '?', '?']);
+	const [toEng, setToEng] = useState(false);
 	let probabilityData = [];
 
+	// let loadJson = fetch('CuteMonsterCube/data/probability.json')
 	let loadJson = fetch('data/probability.json')
 		.then(res => {
 			if(!res.ok) {
@@ -24,6 +28,7 @@ function App() {
 			return data;
 		});
 
+	// load json once window is loaded
 	window.onload = async() => {
     await loadJson;
 	}
@@ -53,9 +58,14 @@ function App() {
 		}
 	};
 
+	// consume the cube
 	const use = () => {
 		if(numCube <= 0) {
-			alert('方塊數量不足');
+			if(toEng) {
+				alert('Insufficient cubes');
+			} else {
+				alert('方塊數量不足');
+			}
 		} else {
 			setCubeUsed(cubeUsed + 1);
 			setNumCube(numCube - 1);
@@ -63,31 +73,77 @@ function App() {
 		}
 	};
 
+	// switch language between Chinese and English
+	const setLanguage = () => {
+		setToEng(!toEng);
+	};
+
   return (
     <div className={styles.App}>
-      <div className={styles.eventImg}>
+			<header>
+				<nav>
+					<FormControlLabel control={<Switch onClick={setLanguage}/>} label={<span style={{ fontSize: '2rem', color: 'white' }}>To English</span>}/>
+				</nav>
+			</header>
+      <div className={styles.leftPart}>
+				{/* <img id={styles.image} src='CuteMonsterCube/images/event.jpeg'/> */}
         <img id={styles.image} src='images/event.jpeg'/>
+				<div className={styles.player}>
+					<div className={styles.message}>
+						{toEng ? (
+							<label>Play BGM and relax👇</label>
+						) : (
+							<label>聽個音樂放鬆一下👇</label>
+						)}
+					</div>
+					<audio loop controls controlsList="nodownload noplaybackrate">
+						{/* <source src="CuteMonsterCube/music/Shattered_Time.mp3" type="audio/mpeg"/> */}
+						<source src="music/Shattered_Time.mp3" type="audio/mpeg"/>
+					</audio>
+				</div>
+				
       </div>
-      <Board attributes={attributes}/>
+      <Board attributes={attributes} toEng={toEng}/>
       <div className={styles['shop-container']}>
+				{/* <img className={styles.cube} src='CuteMonsterCube/images/cube.png'/> */}
         <img className={styles.cube} src='images/cube.png'/>
         <div className={styles.button}>
         <Button variant="contained" style={{fontSize: '3rem', backgroundColor: '#95b222'}} startIcon={<ShoppingCartIcon />} onClick={() => buy()}>
-          購買一組 (55個)
+						{toEng ? (
+							<div>Buy 55 cubes</div>
+						) : (
+							<div>購買一組 (55個)</div>
+						)}
         </Button>
         </div>
         <div className={styles.info}>
           <div className={styles.cost}>
-            累計花費: ${cost}
+						{toEng ? (
+							<div>Total cost: ${cost}</div>
+						) : (
+							<div>累計花費: ${cost}</div>
+						)}
           </div>
           <div className={styles.cost}>
-            累計使用{cubeUsed}個方塊
+						{toEng ? (
+							<div>Total {cubeUsed} cubes used</div>
+						) : (
+							<div>累計使用{cubeUsed}個方塊</div>
+						)}
           </div>
           <div className={styles.cost}>
-            目前持有{numCube}個方塊
+						{toEng ? (
+							<div>Currently holding {numCube} cubes</div>
+						) : (
+							<div>目前持有{numCube}個方塊</div>
+						)}
           </div>
           <Button variant="contained" style={{fontSize: '2rem', backgroundColor: '#95b222'}} onClick={() => use()}>
-            使用方塊
+						{toEng ? (
+							<div>Use 1 cube</div>
+						) : (
+							<div>使用方塊</div>
+						)}
           </Button>
         </div>
       </div>
