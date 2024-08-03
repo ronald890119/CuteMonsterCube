@@ -4,8 +4,8 @@ function Board(props) {
 	return (
 		<div className={styles['board-container']}>
 			<div className={styles['img-container']}>
-				<img src='CuteMonsterCube/images/orchid.gif'/>
-				{/* <img src='images/orchid.gif'/> */}
+				{/* <img src='CuteMonsterCube/images/orchid.gif'/> */}
+				<img src='images/orchid.gif'/>
 			</div>
 			<div className={styles.name}>
 				{props.toEng ? (
