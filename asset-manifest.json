@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CuteMonsterCube/static/css/main.920ca2c2.css",
-    "main.js": "/CuteMonsterCube/static/js/main.d7569002.js",
+    "main.js": "/CuteMonsterCube/static/js/main.b00b5c78.js",
     "static/js/453.d855a71b.chunk.js": "/CuteMonsterCube/static/js/453.d855a71b.chunk.js",
     "static/media/black_heaven.jpg": "/CuteMonsterCube/static/media/black_heaven.9e389290b7b257f1359c.jpg",
     "static/media/point.cur": "/CuteMonsterCube/static/media/point.9c97d4e0a7ba56793457.cur",
@@ -9,11 +9,11 @@
     "static/media/point_mouse.cur": "/CuteMonsterCube/static/media/point_mouse.4a5e648ebcec5e4c763e.cur",
     "index.html": "/CuteMonsterCube/index.html",
     "main.920ca2c2.css.map": "/CuteMonsterCube/static/css/main.920ca2c2.css.map",
-    "main.d7569002.js.map": "/CuteMonsterCube/static/js/main.d7569002.js.map",
+    "main.b00b5c78.js.map": "/CuteMonsterCube/static/js/main.b00b5c78.js.map",
     "453.d855a71b.chunk.js.map": "/CuteMonsterCube/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.920ca2c2.css",
-    "static/js/main.d7569002.js"
+    "static/js/main.b00b5c78.js"
   ]
 }
