@@ -3,3 +3,6 @@
 # CuteMonster Cube Simulator
 CuteMonster Cube is one of the systems of TMS (MapleStory Taiwan server).
 It is a simulator for the cube that can reset the attributes of CuteMonster. It help us prevent spending too much $$.
+
+# Latest Update
+Change the theme into Orchid and Black Heaven for the latest CuteMonster in TMS.
