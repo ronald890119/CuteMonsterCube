@@ -4,21 +4,21 @@ function Board(props) {
 	return (
 		<div className={styles['board-container']}>
 			<div className={styles['img-container']}>
-				{/* <img src='CuteMonsterCube/images/lucid.webp'/> */}
-				<img src='images/lucid.webp'/>
+				<img src='CuteMonsterCube/images/orchid.gif'/>
+				{/* <img src='images/orchid.gif'/> */}
 			</div>
 			<div className={styles.name}>
 				{props.toEng ? (
-					<div>Lucid</div>
+					<div>Orchid (Commander)</div>
 				) : (
-					<div>露西妲</div>
+					<div>殺人鯨(軍團長)</div>
 				)}
 			</div>
 			<div className={styles.skill}>
 				{props.toEng ? (
-					<div>Hypnosis</div>
+					<div>Commander Orchid's Power</div>
 				) : (
-					<div>催眠</div>
+					<div>殺人鯨軍團長的力量</div>
 				)}
 			</div>
 			<div className={styles.attributes}>

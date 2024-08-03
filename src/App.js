@@ -14,8 +14,8 @@ function App() {
 	const [toEng, setToEng] = useState(false);
 	let probabilityData = [];
 
-	// let loadJson = fetch('CuteMonsterCube/data/probability.json')
-	let loadJson = fetch('data/probability.json')
+	let loadJson = fetch('CuteMonsterCube/data/probability.json')
+	// let loadJson = fetch('data/probability.json')
 		.then(res => {
 			if(!res.ok) {
 				throw new Error(res.status);
@@ -86,8 +86,8 @@ function App() {
 				</nav>
 			</header>
       <div className={styles.leftPart}>
-				{/* <img id={styles.image} src='CuteMonsterCube/images/event.jpeg'/> */}
-        <img id={styles.image} src='images/event.jpeg'/>
+				<img id={styles.image} src='CuteMonsterCube/images/event.jpg'/>
+        {/* <img id={styles.image} src='images/event.jpg'/> */}
 				<div className={styles.player}>
 					<div className={styles.message}>
 						{toEng ? (
@@ -97,16 +97,16 @@ function App() {
 						)}
 					</div>
 					<audio loop controls controlsList="nodownload noplaybackrate">
-						{/* <source src="CuteMonsterCube/music/Shattered_Time.mp3" type="audio/mpeg"/> */}
-						<source src="music/Shattered_Time.mp3" type="audio/mpeg"/>
+						<source src="CuteMonsterCube/music/Heaven_Again.mp3" type="audio/mpeg"/>
+						{/* <source src="music/Heaven_Again.mp3" type="audio/mpeg"/> */}
 					</audio>
 				</div>
 				
       </div>
       <Board attributes={attributes} toEng={toEng}/>
       <div className={styles['shop-container']}>
-				{/* <img className={styles.cube} src='CuteMonsterCube/images/cube.png'/> */}
-        <img className={styles.cube} src='images/cube.png'/>
+				<img className={styles.cube} src='CuteMonsterCube/images/cube.png'/>
+        {/* <img className={styles.cube} src='images/cube.png'/> */}
         <div className={styles.button}>
         <Button variant="contained" style={{fontSize: '3rem', backgroundColor: '#95b222'}} startIcon={<ShoppingCartIcon />} onClick={() => buy()}>
 						{toEng ? (
