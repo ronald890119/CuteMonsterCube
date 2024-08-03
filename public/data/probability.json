@@ -1,26 +1,26 @@
 [
  {
-   "attribute": "STR: +20",
+   "attribute": "STR: +25",
    "p": 0.0083
  },
  {
-   "attribute": "DEX: +20",
+   "attribute": "DEX: +25",
    "p": 0.0083
  },
  {
-   "attribute": "INT: +20",
+   "attribute": "INT: +25",
    "p": 0.0083
  },
  {
-   "attribute": "LUK: +20",
+   "attribute": "LUK: +25",
    "p": 0.0083
  },
  {
-   "attribute": "MaxHP: +300",
+   "attribute": "MaxHP: +500",
    "p": 0.0056
  },
  {
-   "attribute": "MaxMP: +300",
+   "attribute": "MaxMP: +500",
    "p": 0.0056
  },
  {
@@ -36,11 +36,11 @@
    "p": 0.0056
  },
  {
-   "attribute": "物理攻擊力: +20",
+   "attribute": "物理攻擊力: +25",
    "p": 0.0111
  },
  {
-   "attribute": "魔法攻擊力: +20",
+   "attribute": "魔法攻擊力: +25",
    "p": 0.0111
  },
  {
@@ -48,15 +48,15 @@
    "p": 0.0111
  },
  {
-   "attribute": "爆擊機率: +20%",
+   "attribute": "爆擊機率: +25%",
    "p": 0.0361
  },
  {
-   "attribute": "最終傷害: +20%",
+   "attribute": "最終傷害: +25%",
    "p": 0.0306
  },
  {
-   "attribute": "全屬性: +20%",
+   "attribute": "全屬性: +25%",
    "p": 0.0306
  },
  {
@@ -72,23 +72,23 @@
    "p": 0.05
  },
  {
-   "attribute": "DEX: +14%",
+   "attribute": "DEX: +20%",
    "p": 0.05
  },
  {
-   "attribute": "INT: +14%",
+   "attribute": "INT: +20%",
    "p": 0.05
  },
  {
-   "attribute": "LUK: +14%",
+   "attribute": "LUK: +20%",
    "p": 0.05
  },
  {
-   "attribute": "MaxHP: +14%",
+   "attribute": "MaxHP: +20%",
    "p": 0.0417
  },
  {
-   "attribute": "MaxMP: +14%",
+   "attribute": "MaxMP: +20%",
    "p": 0.0417
  },
  {
@@ -96,11 +96,11 @@
    "p": 0.0278
  },
  {
-   "attribute": "物理攻擊力: +14%",
+   "attribute": "物理攻擊力: +20%",
    "p": 0.0417
  },
  {
-   "attribute": "魔法攻擊力: +14%",
+   "attribute": "魔法攻擊力: +20%",
    "p": 0.0417
  },
  {
@@ -140,7 +140,7 @@
    "p": 0.0222
  },
  {
-   "attribute": "無視怪物防禦率: +45%",
+   "attribute": "無視怪物防禦率: +50%",
    "p": 0.0278
  },
  {
@@ -152,7 +152,7 @@
    "p": 0.0417
  },
  {
-   "attribute": "加持技能持續時間: +50%",
+   "attribute": "加持技能持續時間: +55%",
    "p": 0.0278
  },
  {
